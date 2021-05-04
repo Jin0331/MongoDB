@@ -5,7 +5,7 @@ services:
     hostname: mongo
     restart: always
     ports:
-      - "9917:27017"
+      - "27017:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: ${PASSWORD:-password}
